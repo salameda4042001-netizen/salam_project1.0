@@ -5,5 +5,5 @@ st.selectbox('선택하세요:',['clzls','vlwk'])
 if st.button('button'):
   st.info(password+'님 안녕하세요.')
   st.warning('반갑습니다.')
-  st.error('dlqslek.)
+  st.error('dlqslek.')
   st.balloons()
