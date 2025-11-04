@@ -5,7 +5,7 @@ import time
 # Streamlit 공포 게임 - 단일 파일 (설치 필요 라이브러리 없음)
 # 배포: GitHub에 push 한 뒤 Streamlit Cloud에 연결하세요.
 
-st.set_page_config(page_title="어둠 속의 속삭임", layout="centered")
+st.set_page_config(page_title="공포게임", layout="centered")
 
 # 기본 CSS로 공포 분위기 연출
 st.markdown("""
