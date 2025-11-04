@@ -2,7 +2,7 @@
 import streamlit as st
 from datetime import datetime
 
-st.set_page_config(page_title="MBTI → 진로 추천 (과학자 비서)", page_icon="", layout="centered")
+st.set_page_config(page_title="MBTI → 진로 추천 ()", page_icon="", layout="centered")
 
 # 헤더
 st.title(" MBTI 진로 리포트")
@@ -66,7 +66,7 @@ career_map = {
 mbti_choice = st.selectbox("MBTI 유형을 선택하세요:", mbti_list, index=0)
 if st.button("추천 받기"):
     # 과학자 비서 톤
-    st.markdown("### 🔬 분석 시작 — 과학자 비서 보고서")
+    st.markdown("### 🔬 분석 시작 — 보고서")
     st.write(f"연구원님, 선택된 MBTI: **{mbti_choice}** 입니다. 짧고 명료하게 진로 2가지를 제안드립니다.")
     career1, career2 = career_map[mbti_choice]
     st.markdown("**추천 1.** " + career1[0])
@@ -88,10 +88,10 @@ if st.button("추천 받기"):
         f"선택: {mbti_choice}\n\n"
         f"추천1: {career1[0]} - {career1[1]}\n"
         f"추천2: {career2[0]} - {career2[1]}\n\n"
-        "메타: 과학자 비서 자동 생성\n"
+        "메타: 자동 생성\n"
     )
     st.download_button("리포트 다운로드 (.txt)", report_text, file_name=f"mbti_report_{mbti_choice}.txt")
 
 # 약간의 웃음과 마무리 톤
 st.write("")
-st.write("_비서 메모: '실험은 반복이 답' — 여러 직업을 시도해 보는 것이 가장 확실한 방법입니다._")
+st.write("_메모: '실험은 반복이 답' — 여러 직업을 시도해 보는 것이 가장 확실한 방법입니다._")
