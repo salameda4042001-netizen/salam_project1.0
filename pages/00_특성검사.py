@@ -67,7 +67,7 @@ mbti_choice = st.selectbox("MBTI 유형을 선택하세요:", mbti_list, index=0
 if st.button("추천 받기"):
     # 과학자 비서 톤
     st.markdown("### 🔬 분석 시작 — 보고서")
-    st.write(f"연구원님, 선택된 MBTI: **{mbti_choice}** 입니다. 짧고 명료하게 진로 2가지를 제안드립니다.")
+    st.write(f"선택된 MBTI: **{mbti_choice}** 입니다. 짧고 명료하게 진로 2가지를 제안드립니다.")
     career1, career2 = career_map[mbti_choice]
     st.markdown("**추천 1.** " + career1[0])
     st.caption(career1[1])
